@@ -1,0 +1,50 @@
+:root {
+    --bg-dark : #1A2f3A;
+
+    --header-width:75%;
+    --header-height: 125px;
+    --formulario-height: 175px;
+    --formulario-width: 250px;
+    --tabela-width: 250px; 
+
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+
+}
+
+.app{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr var(--header-width) 1fr ;
+    grid-template-rows: 
+        var(--header-height)
+        var(--formulario-height)
+        1fr;
+    grid-template-areas: 
+    "vazio header vazio2"
+    "vazio formulario vazio2"
+    "vazio tabela vazio2";
+    height: 100vh;
+    background-color: #F5f5f5;
+}
+
+div#vazio{
+    grid-area: vazio;
+}
+div#vazio2{
+    grid-area: vazio2;
+}
+aside.header{
+    grid-area: header;
+}
+
+aside.formulario{
+    grid-area: formulario;
+}
+
+aside.tabela{
+    grid-area: tabela;
+}

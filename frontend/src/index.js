@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './main/App';
 import reportWebVitals from './reportWebVitals';
-import Cabecalho from './header';
-import Formulario from './formulario';
-import Dados from './dadoscoletados';
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cabecalho/>
-    <Formulario/>
-    <Dados/>
-
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
